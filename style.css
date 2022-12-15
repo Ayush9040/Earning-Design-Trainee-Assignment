@@ -1,0 +1,773 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
+/* designing the header part */
+header {
+  clip-path: polygon(0 0, 100% 0, 100% 77%, 0 100%);
+  background: linear-gradient(180deg, #f8fcff, #bbdbff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15%;
+}
+
+/* designing the nav section */
+header nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* hiding the menu bar button */
+.fa-bars {
+  font-size: 20px;
+  color: #722ed1;
+  display: none;
+}
+
+/* logo image */
+header nav img {
+  width: 40px;
+  margin-top: 5px;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+  gap: 30px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* designing the button child */
+header nav ul li:last-child {
+  border: 2px solid #722ed1;
+  border-radius: 20px;
+  padding: 2px 25px;
+}
+
+header nav ul li:last-child a {
+  color: #722ed1;
+}
+
+/* designing the main section of header */
+header main {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+
+.mainLeftTop {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  background-color: #f9f0ff;
+  border-radius: 20px;
+  padding: 10px 30px;
+  width: fit-content;
+}
+
+.mainLeftTop p,
+.mainLeftTop a {
+  color: #722ed1;
+}
+
+.mainLeft h1 {
+  margin-top: 10px;
+  width: 330px;
+}
+
+.mainLeft > p {
+  color: gray;
+  font-size: 12px;
+  margin: 15px 0;
+  width: 330px;
+}
+
+/* designing the buttons of main left section */
+.mainLeftBtn {
+  margin-top: 30px;
+}
+
+.mainLeftBtn button {
+  font-size: 12px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 600;
+}
+
+.mainLeftBtn button:first-child {
+  background-color: #722ed1;
+  color: white;
+  margin-right: 20px;
+}
+
+.mainLeftBtn button:last-child {
+  background-color: white;
+}
+
+.mainRight img {
+  width: 400px;
+}
+
+/* actionable insights section design */
+.actionableInsight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 480px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.actionableInsight div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #722ed1;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: #f9f0ff;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.actionableInsight > p {
+  color: rgb(161, 161, 161);
+  font-size: 13px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* designing the feature overview section */
+.featureOverview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15%;
+  gap: 10%;
+  margin-top: 60px;
+}
+
+.featureOverviewCard {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.featureOverviewCard img {
+  width: 15px;
+}
+
+.featureOverviewCard h3 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.featureOverview div:first-child h3 {
+  width: 150px;
+}
+
+.featureOverview div:nth-child(2) h3 {
+  width: 150px;
+}
+
+.featureOverview div:last-child {
+  width: 200px;
+}
+
+.featureOverviewCard p {
+  font-size: 14px;
+  color: rgb(161, 161, 161);
+  font-weight: 400;
+}
+
+/* designing the first feature deatils section */
+.featureDetails {
+  display: flex;
+  align-items: center;
+  padding: 5% 12%;
+  gap: 60px;
+}
+
+.featureDetailsImg img {
+  width: 300px;
+}
+
+.featureDetailsRight {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.featureDetailsRight div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  background-color: #f9f0ff;
+  border-radius: 20px;
+  padding: 10px 30px;
+  width: fit-content;
+}
+
+.featureDetailsRight div img {
+  width: 20px;
+}
+
+.featureDetailsRight div p {
+  color: #722ed1;
+  font-weight: 500;
+}
+
+.featureDetailsRight > p {
+  color: rgb(160, 160, 160);
+  font-size: 12px;
+  font-weight: 500;
+  width: 420px;
+  margin-top: 20px;
+}
+
+/* changing the features details 2 direction */
+.featureDetailsTwo {
+  flex-direction: row-reverse;
+}
+
+.featureDetailsTwoImg img {
+  width: 450px;
+}
+
+/* designing the cto and partner companies section */
+.ctoSection,
+.ctoDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ctoSection {
+  clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
+  padding: 15% 0;
+  background: linear-gradient(180deg, #f6e7fc, #e9f2ff);
+}
+
+.ctoDetails {
+  width: 550px;
+  text-align: center;
+}
+
+.ctoDetails p {
+  font-weight: 500;
+}
+
+.ctoDetails img {
+  width: 60px;
+  margin: 15px 0;
+}
+
+.ctoDetails h4 {
+  font-size: 13px;
+}
+
+.ctoDetails div {
+  width: 150%;
+  height: 1.5px;
+  background-color: #f2d3ff;
+  margin: 40px 0;
+}
+
+.ctoSectionImages {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.ctoSectionImages img {
+  width: 100px;
+}
+
+/* designing the form and trusted companies section */
+.companyInteraction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 5% 10%;
+}
+
+.companyInteractionDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+  width: 400px;
+}
+
+.lineDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  color: rgb(184, 178, 178);
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.lineDiv div {
+  height: 1.5px;
+  width: 100px;
+  background-color: rgb(184, 178, 178);
+}
+
+.companyGrid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80%;
+  column-gap: 60px;
+  row-gap: 20px;
+  margin-left: 80px;
+}
+
+.companyGrid img:nth-child(odd) {
+  width: 100px;
+}
+
+.companyGrid img:nth-child(even) {
+  width: 50px;
+}
+
+/* designing the form */
+.userForm {
+  background: #f8effe;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.userForm form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  position: relative;
+  bottom: 25px;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 3px 3px 3px rgb(211, 211, 211), -3px -3px 3px rgb(211, 211, 211);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.userForm form h3 {
+  margin-bottom: 20px;
+}
+
+.userForm form input {
+  border: 1.5px solid rgb(190, 190, 190);
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.userForm form > div button {
+  background-color: #722ed1;
+  width: 100%;
+  border: none;
+  color: white;
+  font-size: 12px;
+  padding: 12px 0;
+  border-radius: 5px;
+}
+
+.userForm form > div p {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.userForm form > div img {
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+.userForm form > p {
+  color: gray;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+/* designing the footer section */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 5%;
+  padding: 5% 0;
+  background-color: #f5f7ff;
+}
+
+.footerLogoSection {
+  width: 185px;
+}
+
+.footerLogoSection > img {
+  width: 40px;
+}
+
+.footerLogoSection div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footerLogoSection > p {
+  font-size: 12px;
+  font-weight: 500;
+  color: gray;
+  margin: 20px 0;
+}
+
+.footerMenuSection {
+  display: flex;
+  align-items: baseline;
+  gap: 10%;
+}
+
+.footerMenuSection ul li {
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.footerMenuSection ul li:first-child {
+  font-weight: 700;
+  font-size: 14px;
+  color: black;
+}
+
+.footerNewsletterSection {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+}
+
+.footerNewsletterSection div {
+  margin-top: 10px;
+  background-color: white;
+  padding: 8px 20px;
+}
+
+.footerNewsletterSection input {
+  border: none;
+  background-color: white;
+  font-size: 12px;
+}
+
+.footerNewsletterSection i {
+  color: #722ed1;
+}
+
+/* code for mobile device responsiveness */
+@media only screen and (max-width: 400px) {
+  body {
+    max-width: 400px;
+  }
+
+  /* designing the header part */
+  header {
+    padding: 0 10px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+
+  /* displaying the menu bar button */
+  .fa-bars {
+    display: block;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  /* designing the main section of header */
+  header main {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+
+  .mainLeftTop {
+    margin: auto;
+  }
+
+  .mainRight img {
+    width: 350px;
+  }
+
+  /* actionable insights section design */
+  .actionableInsight {
+    gap: 10px;
+    width: 350px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 0 20px;
+  }
+
+  /* designing the feature overview section */
+  .featureOverview {
+    padding: 0 20px;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .featureOverviewCard {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .featureOverview div:first-child h3 {
+    width: 300px;
+  }
+
+  .featureOverview div:nth-child(2) h3 {
+    width: 300px;
+  }
+
+  .featureOverview div:last-child {
+    width: 300px;
+  }
+
+  /* designing the first feature deatils section */
+  .featureDetails {
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    margin-top: 50px;
+    gap: 20px;
+  }
+
+  .featureDetailsImg img {
+    width: 250px;
+  }
+
+  .featureDetailsRight {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .featureDetailsRight > p {
+    width: 350px;
+    text-align: center;
+  }
+
+  /* changing the features details 2 direction */
+  .featureDetailsTwo {
+    flex-direction: column;
+  }
+
+  .featureDetailsTwoImg img {
+    width: 350px;
+  }
+
+  /* designing the cto and partner companies section */
+  .ctoSection {
+    clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);
+    margin-top: 20px;
+  }
+
+  .ctoDetails {
+    width: 350px;
+  }
+
+  .ctoDetails div {
+    width: 90%;
+  }
+
+  .ctoSectionImages {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* designing the form and trusted companies section */
+  .companyInteraction {
+    gap: 50px;
+    flex-direction: column;
+  }
+
+  .companyInteractionDetails {
+    gap: 10px;
+    width: 350px;
+  }
+
+  .companyGrid img:nth-child(odd) {
+    width: 80px;
+  }
+
+  .companyGrid img:nth-child(even) {
+    width: 30px;
+  }
+
+  /* designing the form */
+  .userForm {
+    width: 350px;
+  }
+
+  .userForm form {
+    width: 300px;
+    bottom: 30px;
+  }
+
+  /* designing the footer section */
+  footer {
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .footerLogoSection {
+    width: 80%;
+  }
+
+  .footerMenuSection {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+  }
+
+  .footerNewsletterSection {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+  }
+
+  .footerNewsletterSection div {
+    width: 100%;
+  }
+
+  .footerNewsletterSection input {
+    width: 90%;
+  }
+}
+
+/* tablet screen */
+@media only screen and (max-width: 900px) {
+  body {
+    max-width: 900px;
+  }
+
+  /* designing the main section of header */
+  header main {
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .mainRight img {
+    width: 350px;
+  }
+
+  .featureOverview {
+    align-items: baseline;
+  }
+
+  /* designing the first feature deatils section */
+  .featureDetails {
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    margin-top: 50px;
+    gap: 20px;
+  }
+
+  .featureDetailsImg img {
+    width: 250px;
+  }
+
+  .featureDetailsRight {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .featureDetailsRight > p {
+    width: 350px;
+    text-align: center;
+  }
+
+  /* changing the features details 2 direction */
+  .featureDetailsTwo {
+    flex-direction: column;
+  }
+
+  .featureDetailsTwoImg img {
+    width: 350px;
+  }
+
+  .ctoSection {
+    padding: 20% 0;
+  }
+
+  .ctoDetails div {
+    width: 100%;
+  }
+
+  .ctoSectionImages {
+    gap: 20px;
+  }
+
+  .companyInteraction {
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .footerMenuSection {
+    width: 90%;
+    align-items: baseline;
+    justify-content: center;
+  }
+}
